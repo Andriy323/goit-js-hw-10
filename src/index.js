@@ -15,7 +15,7 @@ refs.input.addEventListener('input', debounce(creatFunction, DEBOUNCE_DELAY));
 
 // const URL = ' https://restcountries.com/v3.1';
 function creatFunction(e) {
-  valueText = e.target.value.trim();
+ let valueText = e.target.value.trim();
   refs.list.innerHTML = '';
 
   if (!valueText) {
